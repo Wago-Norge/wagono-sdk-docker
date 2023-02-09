@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ptxdist:
+      container_name: ptxdist
+      build:
+        context: .
+      init: true
+      user: vscode
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+        - ~/secrets:/secrets
+        - ~/.gitconfig:/home/vscode/.gitconfig
+        - ..:/workspaces:cached
+        - ~/.ssh:/home/vscode/.ssh
