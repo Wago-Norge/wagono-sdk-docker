@@ -17,15 +17,12 @@ Run container based on built image
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
 
-Connect to shell inside the container
-```
-docker exec -it wago-sdk-builder sh
-```
-
 Clone source and config repository
 ```
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config.git
-cd wagono-ptxdist-config-cc100
+# run the following for cc100
+cd /workspaces
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git src
+cd /workspaces/src
 git submodule update --init
 ```
 
