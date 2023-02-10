@@ -2,7 +2,9 @@
 Build firmware for Wago devices
 
 Clone this repository
-```git clone https://github.com/Wago-Norge/wagono-sdk-docker.git```
+```
+git clone https://github.com/Wago-Norge/wagono-sdk-docker.git
+```
 
 Build image
 ```
