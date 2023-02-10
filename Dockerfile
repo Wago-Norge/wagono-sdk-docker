@@ -88,7 +88,6 @@ RUN rm -r /opt/gcc-Toolchain-2019.12/.git
 RUN git clone https://github.com/wago/ptxdist.git /ptxdist
 RUN cd /ptxdist && git checkout Update-2020.08.0
 RUN git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git /workspaces/cc100
-RUN rm -r /workspaces/cc100/.git
 
 RUN cd /ptxdist \
     && ./configure \
