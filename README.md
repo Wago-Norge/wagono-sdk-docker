@@ -21,7 +21,7 @@ Clone source and config repository
 ```
 # run the following for cc100
 cd /workspaces
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git src
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git .
 cd /workspaces/src
 git submodule update --init
 ```
