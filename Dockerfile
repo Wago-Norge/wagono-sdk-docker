@@ -96,10 +96,6 @@ RUN cd /ptxdist \
 
 COPY resources /
 
-RUN chmod +x /workspaces/scripts/*.sh
-
-RUN chown -R ${NONROOT_USER} /workspaces
-
 RUN wget https://github.com/GitTools/GitVersion/releases/download/5.10.3/gitversion-linux-x64-5.10.3.tar.gz
 RUN tar -xvf gitversion-linux-x64-5.10.3.tar.gz
 RUN mv gitversion /usr/local/bin
