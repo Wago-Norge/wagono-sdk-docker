@@ -1,1 +1,1 @@
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config.git /workspaces/src
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config.git src
