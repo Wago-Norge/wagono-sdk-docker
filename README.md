@@ -24,7 +24,7 @@ docker exec -it wago-sdk-builder sh
 
 Clone source and config repository
 ```
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config.git
 cd wagono-ptxdist-config-cc100
 git submodule update --init
 ```
