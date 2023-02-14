@@ -31,3 +31,7 @@ git clone https://github.com/Wago-Norge/wagono-ptxdist-config-pfc200g2.git .
 cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp.git .
 ```
+
+Now follow the build instructions for your controller
+
+cc100 --> https://github.com/Wago-Norge/wagono-ptxdist-config-cc100 
