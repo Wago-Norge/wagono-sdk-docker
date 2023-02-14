@@ -32,6 +32,6 @@ cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp.git .
 ```
 
-Now follow the build instructions for your controller
+Now follow the build instructions for your controller to build the custom firmware
 
 cc100 --> https://github.com/Wago-Norge/wagono-ptxdist-config-cc100 
