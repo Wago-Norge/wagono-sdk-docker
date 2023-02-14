@@ -43,13 +43,13 @@ how to build cc100 firmware:
 ./build.sh
 ```
 
-[optional] list avaiable firmware versions (tags):
+[optional] list available firmware versions (tags):
 ```
 cd cc100
 git tag
 ```
 
-[optional] select specific firmare version (tag):
+[optional] select specific firmware version (tag):
 ```
 git checkout <tag>
 ```
