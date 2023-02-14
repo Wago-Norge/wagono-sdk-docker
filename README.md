@@ -1,23 +1,23 @@
 # wagono-sdk-docker
-Build firmware for Wago devices
+Build firmware for Wago devices using this docker container. All tooling needed for the build is included.
 
-Clone this repository
+Clone this repository locally
 ```
 git clone https://github.com/Wago-Norge/wagono-sdk-docker.git
 ```
 
-Build image
+Build the docker image
 ```
 cd wago-sdk-docker
 docker build -t wagono-sdk-docker:latest .
 ```
 
-Run container based on built image
+Run a container based on the image built in the previous step
 ```
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
 
-Clone source and config repository
+Clone the firmware sdk repository for the controller of choice
 ```
 # run the following for cc100
 cd /workspaces
@@ -31,23 +31,3 @@ git clone https://github.com/Wago-Norge/wagono-ptxdist-config-pfc200g2.git .
 cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp.git .
 ```
-
-## TEST 
-
-```mermaid 
-graph TD;
-
-    %% FLOW GENERAL:
-        Main-branch-->CLiBased;
-        Main-branch-->ScriptBased;
-        Main-branch-->VsCodeBased;
-  
-      
-        CLiBased<-->UserDev-Branch;
-        ScriptBased<-->UserDev-Branch;
-        VsCodeBased<-->UserDev-Branch;
-```
-
-
-
-
