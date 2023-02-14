@@ -17,9 +17,9 @@ Run a container based on the image built in the previous step
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
 
-## Instructions cc100 firmware SDK
+## Instructions CC100 firmware SDK
 
-Clone the firmware SDK repository for cc100
+Clone the firmware SDK repository for CC100
 ```
 cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git .
