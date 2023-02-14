@@ -17,28 +17,20 @@ Run a container based on the image built in the previous step
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
 
-Clone the firmware sdk repository for the controller of choice
+## instructions cc100
+
+Clone the firmware sdk repository for cc100
 ```
-# do the following for cc100
 cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git .
-
-# do the following for pfc200g2
-cd /workspaces
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config-pfc200g2.git .
-
-# do the following for tp and edge controller
-cd /workspaces
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp.git .
 ```
 
-## instructions cc100
 IMPORTANT! init and update the submodule:
 ```
 ./init.sh
 ```
 
-how to build cc100 firmware:
+how to build firmware:
 ```
 ./build.sh
 ```
@@ -54,3 +46,62 @@ git tag
 git checkout <tag>
 ```
 
+
+## instructions tp and edge controller
+
+Clone the firmware sdk repository for tp and edge controller
+```
+cd /workspaces
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp-edge.git .
+```
+
+IMPORTANT! init and update the submodule:
+```
+./init.sh
+```
+
+how to build firmware:
+```
+./build.sh
+```
+
+[optional] list available firmware versions (tags):
+```
+cd cc100
+git tag
+```
+
+[optional] select specific firmware version (tag):
+```
+git checkout <tag>
+```
+
+
+## instructions pfc200-g2
+
+Clone the firmware sdk repository for pfc200-g2
+```
+cd /workspaces
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config-pfc200g2.git .
+```
+
+IMPORTANT! init and update the submodule:
+```
+./init.sh
+```
+
+how to build firmware:
+```
+./build.sh
+```
+
+[optional] list available firmware versions (tags):
+```
+cd cc100
+git tag
+```
+
+[optional] select specific firmware version (tag):
+```
+git checkout <tag>
+```
