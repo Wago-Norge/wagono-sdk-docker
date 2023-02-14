@@ -17,9 +17,9 @@ Run a container based on the image built in the previous step
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
 
-## instructions cc100
+## Instructions cc100 firmware SDK
 
-Clone the firmware sdk repository for cc100
+Clone the firmware SDK repository for cc100
 ```
 cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git .
@@ -47,9 +47,9 @@ git checkout <tag>
 ```
 
 
-## instructions tp and edge controller
+## Instructions TP and Edge controller
 
-Clone the firmware sdk repository for tp and edge controller
+Clone the firmware SDK repository for TP and Edge controller
 ```
 cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp-edge.git .
@@ -77,9 +77,9 @@ git checkout <tag>
 ```
 
 
-## instructions pfc200-g2
+## Instructions PFC200-G2
 
-Clone the firmware sdk repository for pfc200-g2
+Clone the firmware SDK repository for PFC200-G2
 ```
 cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-pfc200g2.git .
