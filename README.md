@@ -17,11 +17,17 @@ Run a container based on the image built in the previous step
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
 
+In VSCODE:
+- Click the Docker extention icon and select containers.
+- Right click the new container and select "Attach Visual Studio Code".
+
+A new VSCODE window will open.
+- Open a new terminal and you are ready to continue the build process.
+
 ## Instructions CC100 firmware SDK
 
 Clone the firmware SDK repository for CC100
 ```
-cd /workspaces
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git .
 ```
 
