@@ -38,9 +38,14 @@ IMPORTANT! init and update the submodule:
 ./init.sh
 ```
 
-how to build firmware:
+How to build firmware:
 ```
 ./build.sh
+```
+
+How to create firmware image:
+```
+./createimage.sh
 ```
 
 [optional] list available firmware versions (tags):
