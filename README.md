@@ -3,6 +3,8 @@ Build firmware for Wago devices using this docker container. All tooling needed 
 
 IMPORTANT! Building firmware on a Mac with Apple Silicon (M1/M2) is not supported due to a library missing arm support.
 
+## Building the Docker image
+
 Clone this repository locally
 ```
 git clone https://github.com/Wago-Norge/wagono-sdk-docker.git
