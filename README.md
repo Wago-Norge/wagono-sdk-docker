@@ -20,11 +20,12 @@ Run a container based on the image built in the previous step
 ```
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
-
+</br></br></br>
 ## TA VEKK?? (THORGRIM)
 In VSCODE:
 - Click the Docker extention icon and select containers.
 - Right click the new container and select "Attach Visual Studio Code".
+</br></br></br>
 
 A new VSCODE window will open.
 - Open a new terminal and you are ready to continue the build process.
