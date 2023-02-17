@@ -63,3 +63,79 @@ git tag
 git checkout <tag>
 ```
 
+## Instructions TP600/Edge Controller (Run these commands inside the container)
+
+Clone the firmware SDK repository for TP600/Edge Controller inside the container
+```
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp-edge.git .
+```
+
+IMPORTANT! init and update the submodule:
+```
+./init.sh
+```
+
+How to build firmware:
+```
+./build.sh
+```
+
+How to create firmware image:
+```
+./createimage.sh
+```
+
+How to copy firmware image to local computer:
+```
+NEEDS TO BE UPDATED
+```
+
+[optional] list available firmware versions (tags):
+```
+cd tp
+git tag
+```
+
+[optional] select specific firmware version (tag):
+```
+git checkout <tag>
+```
+
+
+## Instructions PFC200-G2 (Run these commands inside the container)
+
+Clone the firmware SDK repository for PFC200-G2 inside the container
+```
+git clone https://github.com/Wago-Norge/wagono-ptxdist-config-pfc-g2.git .
+```
+
+IMPORTANT! init and update the submodule:
+```
+./init.sh
+```
+
+How to build firmware:
+```
+./build.sh
+```
+
+How to create firmware image:
+```
+./createimage.sh
+```
+
+How to copy firmware image to local computer:
+```
+NEEDS TO BE UPDATED
+```
+
+[optional] list available firmware versions (tags):
+```
+cd pfc
+git tag
+```
+
+[optional] select specific firmware version (tag):
+```
+git checkout <tag>
+```
