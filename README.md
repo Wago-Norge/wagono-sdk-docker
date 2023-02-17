@@ -47,6 +47,11 @@ How to create firmware image:
 ./createimage.sh
 ```
 
+How to copy firmware image to local computer:
+```
+NEEDS TO BE UPDATED
+```
+
 [optional] list available firmware versions (tags):
 ```
 cd cc100
