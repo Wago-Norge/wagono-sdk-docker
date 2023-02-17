@@ -20,19 +20,14 @@ Run a container based on the image built in the previous step
 ```
 docker run -d --name wago-sdk-builder wagono-sdk-docker
 ```
-</br></br></br>
-## TA VEKK?? (THORGRIM)
-In VSCODE:
-- Click the Docker extention icon and select containers.
-- Right click the new container and select "Attach Visual Studio Code".
-</br></br></br>
+## Connect to the containers shell and continue the SDK build
+```
+docker exec -it wago-sdk-builder sh
+```
 
-A new VSCODE window will open.
-- Open a new terminal and you are ready to continue the build process.
+## Instructions CC100 (Run these commands inside the container)
 
-## Instructions CC100 firmware SDK
-
-Clone the firmware SDK repository for CC100
+Clone the firmware SDK repository for CC100 inside the container
 ```
 git clone https://github.com/Wago-Norge/wagono-ptxdist-config-cc100.git .
 ```
@@ -63,62 +58,3 @@ git tag
 git checkout <tag>
 ```
 
-
-## Instructions TP and Edge controller
-
-Clone the firmware SDK repository for TP and Edge controller
-```
-cd /workspaces
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config-tp-edge.git .
-```
-
-IMPORTANT! init and update the submodule:
-```
-./init.sh
-```
-
-how to build firmware:
-```
-./build.sh
-```
-
-[optional] list available firmware versions (tags):
-```
-cd cc100
-git tag
-```
-
-[optional] select specific firmware version (tag):
-```
-git checkout <tag>
-```
-
-
-## Instructions PFC200-G2
-
-Clone the firmware SDK repository for PFC200-G2
-```
-cd /workspaces
-git clone https://github.com/Wago-Norge/wagono-ptxdist-config-pfc200g2.git .
-```
-
-IMPORTANT! init and update the submodule:
-```
-./init.sh
-```
-
-how to build firmware:
-```
-./build.sh
-```
-
-[optional] list available firmware versions (tags):
-```
-cd cc100
-git tag
-```
-
-[optional] select specific firmware version (tag):
-```
-git checkout <tag>
-```
