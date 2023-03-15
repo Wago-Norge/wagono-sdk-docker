@@ -52,6 +52,7 @@ RUN set -x \
     libxml-parser-perl \
     python-libxml2 \
     python-mako \
+    python3-mako \
     python3-setuptools \
     ccache \
     ssh \
